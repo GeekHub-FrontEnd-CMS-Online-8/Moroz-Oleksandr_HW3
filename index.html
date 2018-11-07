@@ -6,12 +6,15 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<form action="" method="get" id="user">
+	<form action="#" method="get" id="user">
 		<fieldset>
 			<legend>Коротко о себе</legend>
 			<p><label>Имя: <input type="text" name="first_name"></label></p>
 			<p><label>Фамилия: <input type="text" name="last_name"></label></p>
-			<p><label>Пол: <input type="radio" name="sex" value="male" checked>мужской <input type="radio" name="sex" value="female">женский</label></p>
+			<p>
+				<label>Пол: <input type="radio" name="sex" value="male" checked>мужской</label>
+				<label><input type="radio" name="sex" value="female">женский</label>
+			</p>
 			<p><label>Возраст: <input type="text" name="age"> лет</label></p>
 		</fieldset>
 		<fieldset>
@@ -23,13 +26,13 @@
 			<p class="no_margin"><label><input type="text" name="social_status"> Социальный статус</label></p>
 			<p class="no_margin"><label><input type="text" name="residence"> Местожительство</label></p>
 			<p><label for="rest">Что вы обычно делаете на выходных:</label></p>
-			<p><input type="checkbox" value="1" id="rest"> Сплю</p>
-			<p><input type="checkbox" value="2" id="rest"> Гуляю с друзьями</p>
-			<p><input type="checkbox" value="3" id="rest"> Хожу на рыбалку</p>
-			<p><input type="checkbox" value="4" id="rest"> Играю в игры</p>
+			<p><input type="checkbox" value="1" name="rest" id="rest"> Сплю</p>
+			<p><input type="checkbox" value="2" name="rest"> Гуляю с друзьями</p>
+			<p><input type="checkbox" value="3" name="rest"> Хожу на рыбалку</p>
+			<p><input type="checkbox" value="4" name="rest"> Играю в игры</p>
 			<p><label for="book">Рассказать о формах в книге, посвященной HTML</label></p>
 			<p>
-				<select name="forms" id="book">
+				<select id="book" name="book">
 					<option value="site frequency" selected>site frequency:</option>
 					<option value="site1">site1</option>
 					<option value="site2">site2</option>
@@ -37,12 +40,12 @@
 				</select>
 			</p>
 			<p><label for="how_much">Сколько книг вы прочитали за свою жизнь:</label></p>
-			<p><input type="radio" name="hm_books" value="0_10" id="how_much"> 0-10</p>
-			<p><input type="radio" name="hm_books" value="11_20" id="how_much"> 11-20</p>
-			<p><input type="radio" name="hm_books" value="21_50" id="how_much">21-50</p>
-			<p><input type="radio" name="hm_books" value="50+" id="how_much">50+</p>
+			<p><input type="radio" name="how_much" value="0_10" id="how_much"> 0-10</p>
+			<p><input type="radio" name="how_much" value="11_20" > 11-20</p>
+			<p><input type="radio" name="how_much" value="21_50" >21-50</p>
+			<p><input type="radio" name="how_much" value="50+" >50+</p>
 			<p><label for="comment">Ваши коментарии:</label></p>
-			<p><textarea name="comments" id="comment" cols="30" rows="10" placeholder="Текст комментариев"></textarea></p>
+			<p><textarea id="comment" cols="30" rows="10" placeholder="Текст комментариев"></textarea></p>
 			<p>
 				<select name="position" size="3">
 					<option value="first">Первая позиция</option>
@@ -55,20 +58,93 @@
 			<legend>И в заключении</legend>
 			<p><input type="text" name="disable" disabled placeholder="Это поле было введено до вас"></p>
 			<p><label for="email">Email:</label></p>
-			<p><input type="email" id="email"></p>
+			<p><input type="email" id="email" name="email"></p>
 			<p><label for="spam">Хотите подписаться на самую модную рассылку спама?</label></p>
 			<p class="italic">Выберите категории</p>
-			<p><input type="checkbox" value="1" id="spam"> Оборудование</p>
-			<p><input type="checkbox" value="2" id="spam"> Как приготовить обеды</p>
-			<p><input type="checkbox" value="3" id="spam"> Заработай миллион за два дня</p>
+			<p><input type="checkbox" value="1" name="spam" id="spam"> Оборудование</p>
+			<p><input type="checkbox" value="2" name="spam"> Как приготовить обеды</p>
+			<p><input type="checkbox" value="3" name="spam"> Заработай миллион за два дня</p>
 			<p><label for="task">Насколько сложная задача:</label></p>
-			<p><input type="radio" name="problem" value="low" id="task" checked> Совсем нет</p>
-			<p><input type="radio" name="problem" value="medium" id="task"> Так себе</p>
-			<p><input type="radio" name="problem" value="hard" id="task"> Еле справились</p>
+			<p><input type="radio" name="task" value="low"  checked id="task"> Совсем нет</p>
+			<p><input type="radio" name="task" value="medium" > Так себе</p>
+			<p><input type="radio" name="task" value="hard" > Еле справились</p>
 		</fieldset>
 	</form>
 	
 	
 	<p class="button"><button type="submit" form="user">Отправить</button></p>
+	<div class="tab">
+		<table class="first">
+			<tr>
+				<th>Об'єкт обробки</th>
+				<th>Норма витрати препарату, мл/10л</th>
+				<th>Норма витрати препарату, л/сотку</th>
+				<th>Шкідливі об'єкти</th>
+			</tr>
+			<tr>
+				<td>Картопля</td>
+				<td>60-80</td>
+				<td>до 5 л.</td>
+				<td>Однорічні дводольні та злакові бур'яни</td>
+			</tr>
+			<tr>
+				<td>Морква</td>
+				<td>40-60</td>
+				<td>до 5 л.</td>
+				<td>Однорічні дводольні та злакові бур'яни</td>
+			</tr>
+		</table>
+		<table class="second">
+			<tr>
+				<th>Культура</th>
+				<th>Бур'яни</th>
+				<th>Норма витрати препарату, л/га</th>
+				<th>Строки обробки</th>
+			</tr>
+			<tr>
+				<td class="one">Ріпак</td>
+				<td>Однорічні</td>
+				<td>2-3</td>
+				<td>1 обробка в фазі 2-4 листків у бур'янів. При висоті бур'янів 10 - 15 см</td>
+			</tr>
+			<tr>
+				<td class="one">Томати</td>
+				<td rowspan="2">однорічні та багаторічні</td>
+				<td>1-2 2-3</td>
+				<td rowspan="3">1 обробка в фазі 1-2 листків культури, висота бур'янів 10 - 15 см</td>
+			</tr>
+			<tr>
+				<td class="one">Огірки</td>
+				<td>2-3</td>
+			</tr>
+			<tr>
+				<td class="one">Коноплі</td>
+				<td>Однорічні</td>
+				<td>1,5</td>
+			</tr>
+		</table>
+		<table class="third">
+			<tr>
+				<th>Культура</th>
+				<th>Спектр дії</th>
+				<th>Норма витрати</th>
+			</tr>
+			<tr>
+				<td>Буряки (столові, кормові, цукрові), морква, соняшник, картопля, капуста, цибуля, ріпак, баклажани, гарбузи, горох, дині, огірки, перець, петрушка, селера, спаржа, томати, плодові культури (вишня, груша, персик, слива, яблуня), ягідні культури (суниця, смородина)</td>
+				<td>Гумай, куряче просо, види мишію, види пальчатки, види вівсюга, метлюг звичайний, лисохвіст польовий, просо волосовидне</td>
+				<td>0,8 - 2,0 л/га</td>
+			</tr>
+			<tr>
+				<td>Однорічні та деякі багаторічні дводольні в т.ч. стійкі до 2,4-Д (підмаренник чіпкий, берізка польова, зірочник середній та ін..)</td>
+				<td>Пшениця озима</td>
+				<td>7,5 - 10</td>
+			</tr>
+			<tr>
+				<td>Поля, призначені для посіву озимих овочевих, баштанних культур, цукрових буряків, кукурудзи, багаторічних трав. Пари, несільськогосподарські угіддя та ін..</td>
+				<td>Багаторічні дводольні (осоти, ромашки, молочаї, кульбаба, та ін..)</td>
+				<td>30</td>
+			</tr>
+		</table>
+	</div>
 </body>
 </html>

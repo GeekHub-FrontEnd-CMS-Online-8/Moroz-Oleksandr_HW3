@@ -1,3 +1,9 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: &HF3F3F3;
+}
+
 form {
 	width: 700px;
 	margin: 0 auto;
@@ -31,4 +37,54 @@ select {
 .no_margin {
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+.tab {
+	margin: 0 auto;
+	width: 1080px;
+}
+
+.first, .first tr, .first th, .first td {
+	border: 1px solid black;
+}
+
+.first {
+	width: 100%;
+	margin: 30px 10px;
+}
+
+.first th {
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.second, .second tr, .second th, .second td {
+	border: 1px solid black;
+}
+
+.second {
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.one {
+	font-weight: bold;
+}
+
+.third, .third tr, .third th, .third td {
+	border: 1px solid black;
+}
+
+.third {
+	width: 50%;
+	margin: 0 auto;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+
+.third td {
+	padding: 5px 5px;
+	
 }
