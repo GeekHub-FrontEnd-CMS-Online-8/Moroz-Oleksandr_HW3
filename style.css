@@ -7,3 +7,28 @@ form {
 	width: 700px;
 	margin: 0 auto;
 }
+
+legend, label[for] {
+	font-weight: bolder;
+}
+
+.italic {
+	font-style: italic;
+}
+
+input[type=text],[type=email] {
+	width: 200px;
+}
+
+input[name=age] {
+	width: 50px;
+}
+
+select {
+	width: 150px;
+}
+
+.no_margin {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
